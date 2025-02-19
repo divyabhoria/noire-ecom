@@ -8,6 +8,10 @@ Our Cutting-Edge Tech Stack:-
 To ensure a seamless, high-performance shopping experience, Noire Cosmetics is built on a robust and scalable foundation:
 
 🔹 Node.js – Fast & efficient server-side processing
+
 🔹 Express.js – Handles routing, APIs & backend functionality
+
 🔹 MySQL – Securely stores user accounts, product details & order history
+
 🔹 Sequelize – Simplifies database management & queries
+
