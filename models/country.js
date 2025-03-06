@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../configs/database');
 
 const Country = sequelize.define('Country', {
-            countryid: {
+    countryid: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoincrement: true

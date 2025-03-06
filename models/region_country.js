@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../configs/database');
 
 const Region_Country = sequelize.define('Region_Country', {
-            reggionid: {
+        reggionid: {
         type: DataTypes.INTEGER,
         allowNull:false
         

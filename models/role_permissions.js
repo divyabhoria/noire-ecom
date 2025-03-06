@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../configs/database');
 
 const Role_Permissions = sequelize.define('Role_Permissions', {
-            roleid: {
+        roleid: {
         type: DataTypes.INTEGER,
         allowNull:false
         

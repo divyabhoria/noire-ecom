@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../configs/database');
 
 const States = sequelize.define('State', {
-            stateid: {
+        stateid: {
         type: DataTypes.INTEGER,
         primaryKey: true
         
