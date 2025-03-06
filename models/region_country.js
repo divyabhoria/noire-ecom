@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const sequelize = require('../configs/database');
 
 const Region_Country = sequelize.define('Region_Country', {
             reggionid: {
