@@ -8,6 +8,15 @@ const countryStateRoutes = require("./routes/countryStateRoutes");
 const departmentsRoutes = require("./routes/departmentsRoutes");
 const designationsRoutes = require("./routes/designationsRoutes");
 const departmentDesigRoutes = require("./routes/departmentDesigRoutes");
+const countryRoutes = require('./routes/countryRoutes');
+const customerRoutes = require('./routes/customerRoutes');
+const permissionsRoutes = require("./routes/permissionsRoutes");
+const regionCountryRoutes = require("./routes/region_countryRoutes");
+const regionRoutes = require("./routes/regionRoutes");
+const rolePermissionsRoutes = require("./routes/role_permissionsRoutes");
+// const employeeRoutes = require("./routes/employeeRoutes");
+const state_Routes=require("./routes/stateRoutes");
+
 
 require("dotenv").config();
 const sequelize = require("./configs/database");
@@ -32,9 +41,18 @@ app.use("/api/countrystate", countryStateRoutes);
 app.use("/api/departments", departmentsRoutes);
 app.use("/api/designations", designationsRoutes);
 app.use("/api/department-desig", departmentDesigRoutes);
+app.use('/api/countries', countryRoutes);
+app.use('/api/customers', customerRoutes);
+app.use("/api/permissions", permissionsRoutes);
+app.use("/api/regions", regionRoutes);
+app.use("/api/region-country", regionCountryRoutes);
+app.use("/api/role-permissions", rolePermissionsRoutes);
+// app.use("/api/employees", employeeRoutes);
+app.use("/api/state",state_Routes);
+
 
 // Start Server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 sequelize
   .sync({ alter: true })
   .then(() => {
